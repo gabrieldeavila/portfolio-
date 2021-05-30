@@ -1,0 +1,30 @@
+.projects
+  @include flex(row, space-evenly)
+  &-content
+    transition: 0.5s
+    width: 270px
+    height: 221px
+    @include flex
+    background: $white
+    div
+      @include flex
+      height: 80%
+      padding: 1rem
+      h3
+        font-size: 19px
+      p
+        text-align: center
+        padding: 0 0.5rem
+        font-weight: 400
+      .btn
+        color: $white
+        background: $black
+        font-weight: 700
+        text-decoration: none
+        padding: .5rem 2rem
+        border-radius: 10px
+        transition: 0.5s
+    &:hover
+      transition: 0.5s
+      transform: scale(1.04)
+      box-shadow: 5px 5px 15px 5px darken($white, 60)

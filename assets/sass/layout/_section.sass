@@ -1,0 +1,48 @@
+.section
+  &-names
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "name portfolio portfolio"
+    overflow: hidden
+    &-gabriel
+      @include flex
+      color: $white
+      grid-area: name
+      .title
+        margin: 0
+        text-transform: uppercase
+        font-size: 100px
+        font-weight: 700
+      .rows
+        width: 80%
+        hr
+          border-color: $red
+          border-width: 5px
+          border-radius: 5px
+          width: 50%
+          margin: 5px 0 
+          border-style: solid
+        .left
+          float: left
+        .right
+          float: right
+      .text
+        p
+          margin: 0
+          text-align: justify
+        width: 80%
+        @include flex
+        font-weight: 400
+        font-size: 24px
+
+    &-image
+      grid-area: portfolio
+      img
+        width: 80%
+        float: right
+        width: 
+
+  &-description
+    h2
+      @include text
