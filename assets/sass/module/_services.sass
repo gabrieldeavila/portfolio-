@@ -1,0 +1,19 @@
+.services
+  @include flex(row, space-around)
+  &-all
+    width: 447px
+    height: 315px
+    border: solid 1px $white
+    margin-bottom: 4rem
+    transition: 0.25s
+    &:hover
+      @include hover
+  .content
+    height: 100%
+    padding: 0 1rem
+    @include flex(column, space-evenly)
+    color: $white
+    p
+      text-align: center
+
+  &-site-creation
